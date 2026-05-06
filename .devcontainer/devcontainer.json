@@ -13,5 +13,11 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       }
     }
+  },
+  "mounts": [
+    "source=/run/user/1000/ssh-agent.socket,target=/ssh-agent.socket,type=bind"
+  ],
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent.socket"
   }
 }
